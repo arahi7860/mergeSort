@@ -40,12 +40,11 @@ Let's take a look at this, visually:
 
 In order to implement merge sort, it's useful to first implement a helper function. This helper function will be responsible for the second phase, merging two sorted arrays; given two arrays which are sorted, this helper function should create a new array, the resulting sorted array, which consists of all of the elements from the two arrays.
 
-![screenshot 2019-10-14 12 28 38](https://media.git.generalassemb.ly/user/19642/files/41476a00-ee7e-11e9-9168-e4ae2fca7ca0)
-
-
 ### Big 0 Complexity
 
 The time complexity of merge sort is `O(n (log n))` in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves– **(log n)** complexity– and later merge those two halves– **linear complexity**.
+
+![screenshot 2019-10-14 12 28 38](https://media.git.generalassemb.ly/user/19642/files/41476a00-ee7e-11e9-9168-e4ae2fca7ca0)
 
 In other words, the number of times we can break it in half will be the base-2 logarithm of the number of inputs, and when we merge it we will visit each input once.
 
