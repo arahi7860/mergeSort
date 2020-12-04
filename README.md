@@ -1,10 +1,17 @@
-# Divide & Conquer Pt. 1 – Merge Sort
+# Divide & Conquer Pt. 2 – Merge Sort
 
-![sorting](https://media.giphy.com/media/9u514UZd57mRhnBCEk/giphy.gif)
+![sorting](https://media.giphy.com/media/xKV2kPkKKhaymLzXYO/giphy.gif)
 
-There is a family of sorting algorithms that can improve time complexity from `O(n^2)` to `O(n (log n))`: the Divide & Conquer Sorting Algorithms.
+Merge Sort is a *Divide and Conquer* algorithm that exploits the fact that arrays of 0 or 1 elements are always sorted.
+
+An array with 0 elements - i.e.: [] - has nothing to sort;
+An array with 1 element - i.e.: [2] - is already sorted;
+
+Merge Sort improves time complexity for sorting from `O(n^2)` (i.e. Bubble Sort and Insertion Sort) to `O(n (log n))`.
 
 For the efficiency we gain, there's a tradeoff of simplicty; the more efficient algorithms are more complex, and generally will take longer to understand on a gut level.
+
+## Recursion
 
 Before we jump in, a quick refresher on *recursion*.
 
@@ -18,8 +25,15 @@ Before we jump in, a quick refresher on *recursion*.
 <details><summary>What does recursion require?</summary>
   <br>
   
-  Recursion requires both a *recursive case*– an input for which the function will call itself– and a *base case*- an input for which the recursion is stopped, preventing an infinite loop.
+  Recursion requires both a **recursive case**– a scenario for which the function will call itself– and a **base case**- a scenario for which the recursion is stopped, preventing an infinite loop.
   
+</details>
+
+<details><summary>What data structure handles the order of operations for recursion?</summary>
+  <br>
+
+  Recursion uses the **call stack** to store function calls and execute them in LIFO (last in, first out) order. When a function *returns*, the function will be executed and then removed from the **call stack**.
+
 </details>
 
 ## The Merge Sort
