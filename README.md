@@ -4,8 +4,8 @@
 
 Merge Sort is a *Divide and Conquer* algorithm that exploits the fact that arrays of 0 or 1 elements are always sorted.
 
-An array with 0 elements - i.e.: [] - has nothing to sort;
-An array with 1 element - i.e.: [2] - is already sorted;
+* An array with 0 elements - i.e.: [] - has nothing to sort;
+* An array with 1 element - i.e.: [2] - is already sorted;
 
 Merge Sort improves time complexity for sorting from `O(n^2)` (i.e. Bubble Sort and Insertion Sort) to `O(n (log n))`.
 
