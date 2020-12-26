@@ -1,4 +1,4 @@
-# Divide & Conquer Pt. 2 – Merge Sort
+# Divide & Conquer Pt. 1 – Merge Sort
 
 ![sorting](https://media.giphy.com/media/xKV2kPkKKhaymLzXYO/giphy.gif)
 
