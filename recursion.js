@@ -1,12 +1,12 @@
 const countDown = (num) => {
-  if (num > 0) {
-    // recursively calling our function until it hits the base case
-    console.log(num);
-    return countDown(num - 1);
-  } else {
-    // base case
-    return num;
+  
+  if (num < 1) {
+    return num
   }
+  
+  console.log("COUNT: ", num)
+  return countDown(num - 1);
+
 };
 
 console.log("The return at the end", countDown(10));
