@@ -13,7 +13,7 @@ For the efficiency we gain, there's a tradeoff of simplicty; the more efficient 
 
 ## Recursion
 
-Before we jump in, a quick refresher on *recursion*.
+Before we jump in, let's talk *recursion*.
 
 <details><summary>What is recursion?</summary>
   <br>
