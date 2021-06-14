@@ -1,28 +1,37 @@
-const mergeSort = (array) => {
-  // need a base case to check the length of our array is less than or equal to 1
-  // so we don't cause infinite loops since we will be using recursion
-  // need to find the middle (rounded (Math.floor)) of our array
-  // now we have the middle we need to split the array in two
-  // (left and right) using slice
-  // using recursion, we will keep slicing our array until there the
-  // length of the array is 1 or less (our base case)
-  // call our helper function that handles the merging
-  // passing in two arguments (left and right) and returning
-  // this function call
+const merge = (leftArray, rightArray) => {
+
+  // 1. create an array to hold the results
+
+  // 2. write a loop that runs until one of the arrays is empty
+  // each time through the loop, compare the first elements of both arrays
+  // remove whichever is lower and add it to the results array
+
+  // 3. squoosh them all together in order
+  // use spread syntax or .concat to add the three arrays in order: results, left, right
+  // and return the result!
+  
 };
 
-const merge = (leftArray, rightArray) => {
-  // declare a new array that we will return at the end
-  // so we can merge our left and right arrays together
-  // using a while loop we will loop until we finish merging
-  // both arrays together setting our condition as there are values
-  // in both arrays
-  // using a if statement we need to start our comparing
-  // if left is less than right, push into our merge array
-  // if right is less than left, push into our merge array
-  // return our array when our while loop is done
-  // concatenating the left over arrays of left and right
-  // with our mergedArray
+// test it!
+// console.log(merge([1,5,13,15], [2,3,6,8]))
+
+const mergeSort = (array) => {
+  // 1. establish a base case:
+  // return the array if its length is less than 2
+
+  // 2. find the center:
+  // use Math.floor() and the array length to find an index close to the center
+
+  // 3. split the array:
+  // use the middle index and .slice or .splice to create a left and right array
+
+  // 4. merge the arrays (sort of):
+  // actually merge the /results/ or running mergeSort with the arrays!
+  // meaning: the two arguments for merge will both be invocations of mergeSort, each with one of the arrays.
+
+  // 5. return step 4
+  // either in one step above, or here
+
 };
 
 // test out our code
